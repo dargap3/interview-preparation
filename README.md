@@ -101,11 +101,54 @@
 
 - And always remember: Communicate your thought process as much as possible. Don’t worry about finishing it fast. Every part of the interview matters.
 
+## Data Structures
+
+Data structure is a collection of values.
+
+Algorithms are the steps or processes we put into place to manipulate these collection of values.
+
+Data structures + algorithms = programs
+
+Most common data structures are:
+
+- Arrays
+- Stacks
+- Queues
+- Linked Lists
+- Trees
+- Tries
+- Graphs
+- Hash tables
+
+Some Algorithms:
+
+- Sorting
+- Dynamic programming
+- BFS + DFS (Searching)
+- Recursion
+
+Various operations that can be performed on different data structures:
+
+- Insertion
+- Deletion
+- Traversal
+- Searching
+- Sorting
+- Access
+
+1. **Arrays:** sometimes called "lists", organizes items sequentially.
+
+<u>**Static arrays**</u> are fixed in size while the <u>**Dynamic arrays**</u> allow us to copy and rebuild an array at a new location.
+
 ## USEFUL RESOURCES
 
 - [replit](https://replit.com/) --> Your own automated app developer
 - [glot](https://glot.io/) --> an open source pastebin with runnable snippets and API.
+- [course repo](https://github.com/aneagoie/ztm-master-the-coding-interview-ds-algo)
 - [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
 - [ZTM Big O Cheat Sheet](https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent)
 - [Performance interface](https://developer.mozilla.org/en-US/docs/Web/API/Performance) --> When we use JS the browser has a method called 'perfomance' that could be useful.
 - [Example google interview](https://www.youtube.com/watch?v=XKu_SEDAykw)
+- [List of data structures](https://en.wikipedia.org/wiki/List_of_data_structures)
+- [Registers and RAM](https://www.youtube.com/watch?v=fpnE6UAfbtU)
+- [Computer Memory](https://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node55.html)
