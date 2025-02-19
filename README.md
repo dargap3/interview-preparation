@@ -136,9 +136,25 @@ Various operations that can be performed on different data structures:
 - Sorting
 - Access
 
-1. **Arrays:** sometimes called "lists", organizes items sequentially.
+### 1. **Arrays:**
+
+Sometimes called "lists", organizes items sequentially.
 
 <u>**Static arrays**</u> are fixed in size while the <u>**Dynamic arrays**</u> allow us to copy and rebuild an array at a new location.
+
+In interview questions, string should be treated as arrays.
+
+Pros of using arrays: Fast lookups, fast push/pop, ordered.
+Cons of using arrays: Slow inserts, slows deletes.
+
+#### Exercises
+
+- [Two Sum](https://leetcode.com/problems/two-sum/)
+- [Maximun Subarray](https://leetcode.com/problems/maximum-subarray/description/)
+- [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
+- [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
+- [Rotate Array](https://leetcode.com/problems/rotate-array/description/)
+- [Longest Word](https://coderbyte.com/information/Longest%20Word)
 
 ## USEFUL RESOURCES
 
