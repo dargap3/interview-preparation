@@ -26,7 +26,14 @@ function mergeSortedArrays(array1, array2) {
       j++;
     }
   }
+
+  console.log(mergedArray, "mergedArray");
   return mergedArray;
 }
 
 mergeSortedArrays([0, 3, 4, 31], [3, 4, 6, 30]);
+
+const mergeSortedArrays2 = (array1, array2) =>
+  [...array1, ...array2].sort((a, b) => a - b);
+
+mergeSortedArrays2([0, 3, 4, 31], [3, 4, 6, 30]);
