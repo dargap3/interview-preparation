@@ -156,6 +156,15 @@ Cons of using arrays: Slow inserts, slows deletes.
 - [Rotate Array](https://leetcode.com/problems/rotate-array/description/)
 - [Longest Word](https://coderbyte.com/information/Longest%20Word)
 
+### 2. **Hash Tables:**
+
+Hash tables, hash maps, maps, unordered maps, dictionaries, objects are ways to call them.
+
+Pros of using hash tables: Fast lookups(\*), fast inserts, flexible keys.
+Cons of using hash tables: unordered, slow ket iteration.
+
+(\*) We need a good collision resolution
+
 ## USEFUL RESOURCES
 
 - [replit](https://replit.com/) --> Your own automated app developer
@@ -168,3 +177,5 @@ Cons of using arrays: Slow inserts, slows deletes.
 - [List of data structures](https://en.wikipedia.org/wiki/List_of_data_structures)
 - [Registers and RAM](https://www.youtube.com/watch?v=fpnE6UAfbtU)
 - [Computer Memory](https://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node55.html)
+- [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
+- [Comparison of programming languages](<https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(associative_array)>)
