@@ -138,6 +138,8 @@ Various operations that can be performed on different data structures:
 
 ### 1. **Arrays:**
 
+In JavaScript, an Array is a global object that is used to create a list-like object. Arrays represent collections of data, stored in contiguous memory locations and accessible by indices.
+
 Sometimes called "lists", organizes items sequentially.
 
 <u>**Static arrays**</u> are fixed in size while the <u>**Dynamic arrays**</u> allow us to copy and rebuild an array at a new location.
@@ -158,12 +160,43 @@ Cons of using arrays: Slow inserts, slows deletes.
 
 ### 2. **Hash Tables:**
 
+In JavaScript, Hash Tables are often implemented as objects or Maps. A Hash Table is a structure that pairs keys to values allowing for fast retrieval of the value by using a key.
+
 Hash tables, hash maps, maps, unordered maps, dictionaries, objects are ways to call them.
 
 Pros of using hash tables: Fast lookups(\*), fast inserts, flexible keys.
-Cons of using hash tables: unordered, slow ket iteration.
+Cons of using hash tables: unordered, slow key iteration.
 
 (\*) We need a good collision resolution
+
+### 3. **Linked Lists:**
+
+JS doesn't actually come with link lists built in.
+
+A pointer is a reference to another place in memory or another object or another node.
+
+A linked list is a linear data structure that consists of a group of nodes in a sequence. Each node contains data and a reference (in JS, we use pointers implemented as object references) to the next node in the sequence. This structure allows for efficient insertion and deletion of elements without reorganizing the entire data structure.
+
+There are two types of linked lists:
+
+- Singly Linked List - Each node has one pointer to the next node.
+- Doubly Linked List - Each node has two pointers, one to the next node and one to the previous node, making backward traversal possible alongside forward traversal.
+
+Time and Space Complexity:
+
+- Insertion O(1) for insertion at the beginning but O(n) if you need to scan through the list.
+- Deletion is O(1) to remove from the start but O(n) from the end or middle because you need to traverse to find the node.
+- Searching through the list is O(n) because you have to traverse through the list.
+- Space Complexity is O(n) due to storage needs for n elements in the list.
+
+When to use Linked Lists:
+Use linked lists when you need constant-time O(1) insertions/deletions from the list (like when implementing queues).
+Good choice when you do not know the memory size in advance or if you need to frequently add and delete nodes.
+Not ideal for search-intensive tasks due to O(n) search time.
+
+When to avoid:
+Avoid linked lists when you need efficient, direct access to the individual elements (indexed access like arrays).
+Not recommended if you need to perform lots of access by index operations or when memory space is a concern.
 
 ## USEFUL RESOURCES
 
@@ -179,3 +212,5 @@ Cons of using hash tables: unordered, slow ket iteration.
 - [Computer Memory](https://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node55.html)
 - [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
 - [Comparison of programming languages](<https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(associative_array)>)
+- [Linked lists visualization](https://visualgo.net/en/list?slide=1)
+- [Arrays vs Linked lists](https://www.youtube.com/watch?v=DyG9S9nAlUM)
