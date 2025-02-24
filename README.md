@@ -198,6 +198,37 @@ When to avoid:
 Avoid linked lists when you need efficient, direct access to the individual elements (indexed access like arrays).
 Not recommended if you need to perform lots of access by index operations or when memory space is a concern.
 
+### 4. **Stacks and Queues:**
+
+They are both what we call linear data structures.
+
+A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. The last element added to the stack will be the first one to be removed. Stacks can be implemented in JS using arrays or linked lists.
+
+Basic Stack Operations:
+
+- Push: Add an element to the top of the stack.
+- Pop: Remove the top element of the stack.
+- Peek: Get the top element of the stack without removing it.
+
+When to use a Stack:
+
+- Undo mechanisms in text editors.
+- Function call management in programming languages (call stack).
+- Syntax parsing in compilers.
+
+A queue is a linear data structure that follows the First In, First Out (FIFO) principle. The first element added will be the first one to be removed. Queues can be implemented in JS using linked lists or stacks.
+
+Basic Queue Operations:
+
+- Enqueue: Add an element to the end of the queue.
+- Dequeue: Remove the element from the front of the queue.
+- Front: Get the front item from the queue.
+
+When to use a Queue:
+
+- Managing tasks on a first-come, first-serve basis like CPU scheduling.
+- Handling of live system queues like call center systems.
+
 ## USEFUL RESOURCES
 
 - [replit](https://replit.com/) --> Your own automated app developer
