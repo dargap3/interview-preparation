@@ -229,6 +229,10 @@ When to use a Queue:
 - Managing tasks on a first-come, first-serve basis like CPU scheduling.
 - Handling of live system queues like call center systems.
 
+#### Exercises
+
+- [Queue using stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)
+
 ## USEFUL RESOURCES
 
 - [replit](https://replit.com/) --> Your own automated app developer
