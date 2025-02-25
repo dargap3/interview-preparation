@@ -14,9 +14,12 @@
 - ### Big O's
 
   1. O(1) Constant Time: No loops. (Excellent)
-  2. O(n) Linear Time: loops through n items. (Fair)
-  3. O(n^2) Quadratic time: every element in a collection needs to be compared to every other element. Two nested loops (Horrible)
-  4. O(n!) Factorial time: you are adding a loop for every element. Oh no! (Horrible)
+  2. O(log N) Logarithmic: usually searching algorithms have log n if they are sorted (Binary search) (Good)
+  3. O(n) Linear Time: loops through n items. (Fair)
+  4. O(n log(n)) Log linear: usually sorting operations. (Bad)
+  5. O(n^2) Quadratic time: every element in a collection needs to be compared to every other element. Two nested loops (Horrible)
+  6. O(2^n) Exponential: recursive algorithms that solves a problem of size N. (Horrible)
+  7. O(n!) Factorial time: you are adding a loop for every element. Oh no! (Horrible)
 
   Iterating through half a collection is still O(n).
 
@@ -233,6 +236,62 @@ When to use a Queue:
 
 - [Queue using stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)
 
+### 5. **Trees:**
+
+A tree is a non-linear data structure consisting of nodes connected by edges where one node is designated as the root, and all other nodes are partitioned into disjoint sets which recursively form subtrees.
+
+**Some Types of Trees and Their Use Cases:**
+
+1. **Binary Search Trees (BST)**
+   - A BST is where each node has up to two children with a left child having a value lesser than its parent and the right child having a value greater.
+   - **Use Cases**: Useful for creating ordered lists, implementing dynamic sets, and databases where rapid search, insertion, and deletion are necessary.
+   - **Time Complexity**:
+     - **Search**: O(log n) on average, O(n) in the worst case (unbalanced tree).
+     - **Insertion/Deletion**: O(log n) on average, O(n) in worst case.
+   - **Space Complexity**: O(n) for storing n elements.
+2. **Balanced vs Unbalanced Trees**
+   - A balanced tree maintains height as low as possible by automatically adjusting the tree during operations to achieve the minimum possible maximum height, reducing the time complexity of operations.
+   - An unbalanced tree does not regulate height, which can lead to decreased performance (similar to a linked list in the worst case).
+3. **AVL Trees**
+
+   - A type of self-balancing binary search tree where the heights of the two child subtrees of any node differ by at most one.
+   - **Use Cases**: Useful where frequent insertions and deletions are expected, and quick search is necessary.
+   - **Time Complexity**:
+     - **Search/Insertion/Deletion**: O(log n).
+   - **Space Complexity**: O(n).
+
+4. **Red-Black Trees**
+   - Another type of self-balancing binary search tree, where each node stores an extra bit for denoting the color of the node, either red or black.
+   - **Use Cases**: Commonly used in computational geometry and in building other data structures like persistent data structures.
+   - **Time Complexity**:
+     - **Search/Insertion/Deletion**: O(log n).
+   - **Space Complexity**: O(n).
+5. **Binary Heaps**
+   - A binary heap is a complete binary tree which satisfies the heap ordering property: the value of each node is either greater than or equal to (max-heap) or less than or equal to (min-heap) the values of its children.
+   - **Use Cases**: Implementing priority queues, scheduling problems, sorting algorithms.
+   - **Time Complexity**:
+     - **Insertion**: O(log n).
+     - **Deletion**: O(log n).
+   - **Space Complexity**: O(n).
+6. **Priority Queues**
+   - An abstract data type where each element has a "priority" assigned to it. In a priority queue, an element with high priority is served before an element with low priority.
+   - Implemented using structures like heaps for efficient performance.
+   - **Use Cases**: Bandwidth management, any scenario where resources are scheduled.
+   - **Time Complexity**:
+     - **Insertion**: O(log n) (using binary heaps).
+     - **Deletion of the highest priority element**: O(log n).
+   - **Space Complexity**: O(n).
+
+**When to Use and When Not to Use Trees:**
+
+- **Use when**:
+  - You need ordered data.
+  - You require quick search, insertion, and delete operations.
+  - You deal with a system that requires priority-based scheduling (use binary heaps).
+- **Avoid when**:
+  - Operations requiring simple, sequential access to elements where arrays or linked lists can be simpler and more effective.
+  - Real-time constraints where even the logarithmic time complexity may be undesirable.
+
 ## USEFUL RESOURCES
 
 - [replit](https://replit.com/) --> Your own automated app developer
@@ -249,3 +308,12 @@ When to use a Queue:
 - [Comparison of programming languages](<https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(associative_array)>)
 - [Linked lists visualization](https://visualgo.net/en/list?slide=1)
 - [Arrays vs Linked lists](https://www.youtube.com/watch?v=DyG9S9nAlUM)
+- [Binary trees visualization](https://visualgo.net/en/bst?slide=1)
+- [AVL Tree visualization](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
+- [The little AVL Tree that could ](https://medium.com/basecs/the-little-avl-tree-that-could-86a3cae410c7)
+- [Red/Black Tree visualization](https://www.cs.usfca.edu/~galles/visualization/RedBlack.html)
+- [Painting Nodes Black with red-black trees](https://medium.com/basecs/painting-nodes-black-with-red-black-trees-60eacb2be9a5)
+- [Red black and AVL trees comparision](https://stackoverflow.com/questions/13852870/red-black-tree-over-avl-tree)
+- [Binary heap visualization](https://visualgo.net/en/heap?slide=1)
+- [Why are two different concepts both called heap](https://stackoverflow.com/questions/1699057/why-are-two-different-concepts-both-called-heap)
+- [Priority Queues](https://stackoverflow.com/questions/1699057/why-are-two-different-concepts-both-called-heap)
