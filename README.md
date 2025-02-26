@@ -292,6 +292,45 @@ A tree is a non-linear data structure consisting of nodes connected by edges whe
   - Operations requiring simple, sequential access to elements where arrays or linked lists can be simpler and more effective.
   - Real-time constraints where even the logarithmic time complexity may be undesirable.
 
+### 6. **Graphs:**
+
+### What is a Graph?
+
+A graph is a collection of nodes (vertices) and edges connecting some or all of those nodes. Graphs are used to model various real-world situations involving relationships between objects.
+
+### Types of Graphs:
+
+1. **Directed vs. Undirected Graphs**
+
+   - **Directed Graph (Digraph)**: Edges have a direction, meaning the relationship is one-way. For example, a Twitter following graph, where if person A follows person B, it doesn't necessarily mean B follows A.
+   - **Undirected Graph**: Edges have no direction. The relationship is mutual/bidirectional, such as a Facebook friends graph where a friendship is mutual.
+
+2. **Weighted vs. Unweighted Graphs**
+
+   - **Weighted Graph**: Edges have weights associated with them, representing the cost or distance between nodes. Useful in scenarios such as routing and navigation systems.
+   - **Unweighted Graph**: Edges do not carry weights. Simple representation of connectivity, suitable for relationship mapping where the strength or capacity of connection is irrelevant.
+
+3. **Cyclic vs. Acyclic Graphs**
+   - **Cyclic Graph**: Contains at least one cycle, potentially complicating traversal algorithms.
+   - **Acyclic Graph**: Does not contain any cycles. A common example is a directed acyclic graph (DAG), used in scenarios like task scheduling and dependencies.
+
+### When to Use Graphs:
+
+- **Use Cases**: Network routing, social network features, recommendation engines, project scheduling, biological data analysis.
+- **Pros**: Excellent for representing complex relationships and interconnected data.
+- **Cons**: Algorithms can become complex and computationally expensive, particularly for dense graphs.
+
+### Time and Space Complexity
+
+- **Time Complexity**: Varies based on operation and the type of graph representation:
+
+  - For adjacency list representation, finding all edges connected to a vertex is O(V), where V is vertices count; finding if there is an edge between two vertices can be O(V).
+  - For adjacency matrix representation, checking if an edge exists between two vertices is O(1), but finding all edges connected to a vertex is O(V).
+
+- **Space Complexity**:
+  - Adjacency list: O(V + E), where E is edges count.
+  - Adjacency matrix: O(V^2).
+
 ## USEFUL RESOURCES
 
 - [replit](https://replit.com/) --> Your own automated app developer
@@ -317,3 +356,4 @@ A tree is a non-linear data structure consisting of nodes connected by edges whe
 - [Binary heap visualization](https://visualgo.net/en/heap?slide=1)
 - [Why are two different concepts both called heap](https://stackoverflow.com/questions/1699057/why-are-two-different-concepts-both-called-heap)
 - [Priority Queues](https://stackoverflow.com/questions/1699057/why-are-two-different-concepts-both-called-heap)
+- [Graphs visualization](https://visualgo.net/en/graphds?slide=1)
