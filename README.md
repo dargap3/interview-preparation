@@ -294,11 +294,11 @@ A tree is a non-linear data structure consisting of nodes connected by edges whe
 
 ### 6. **Graphs:**
 
-### What is a Graph?
+**What is a Graph?**
 
 A graph is a collection of nodes (vertices) and edges connecting some or all of those nodes. Graphs are used to model various real-world situations involving relationships between objects.
 
-### Types of Graphs:
+**Types of Graphs:**
 
 1. **Directed vs. Undirected Graphs**
 
@@ -314,13 +314,13 @@ A graph is a collection of nodes (vertices) and edges connecting some or all of 
    - **Cyclic Graph**: Contains at least one cycle, potentially complicating traversal algorithms.
    - **Acyclic Graph**: Does not contain any cycles. A common example is a directed acyclic graph (DAG), used in scenarios like task scheduling and dependencies.
 
-### When to Use Graphs:
+**When to Use Graphs:**
 
 - **Use Cases**: Network routing, social network features, recommendation engines, project scheduling, biological data analysis.
 - **Pros**: Excellent for representing complex relationships and interconnected data.
 - **Cons**: Algorithms can become complex and computationally expensive, particularly for dense graphs.
 
-### Time and Space Complexity
+**Time and Space Complexity**
 
 - **Time Complexity**: Varies based on operation and the type of graph representation:
 
@@ -330,6 +330,23 @@ A graph is a collection of nodes (vertices) and edges connecting some or all of 
 - **Space Complexity**:
   - Adjacency list: O(V + E), where E is edges count.
   - Adjacency matrix: O(V^2).
+
+## Algorithms
+
+### 1. Recursion:
+
+Recursion isn't technically an algorithm, it's more of a concept.
+A recursive function is a function that refers to itself.
+
+There are 3 rules when we talk about resursion:
+
+1. Identify the base case.
+2. Indetify the recursive case.
+3. Get closer and closer and return when needed. Usually you have 2 returns.
+
+Recursion is useful for things such as tree data structures and doing traversal.
+
+Recursion could be really space complexity expensive and we have to be careful whenever we use it.
 
 ## USEFUL RESOURCES
 
@@ -357,3 +374,4 @@ A graph is a collection of nodes (vertices) and edges connecting some or all of 
 - [Why are two different concepts both called heap](https://stackoverflow.com/questions/1699057/why-are-two-different-concepts-both-called-heap)
 - [Priority Queues](https://stackoverflow.com/questions/1699057/why-are-two-different-concepts-both-called-heap)
 - [Graphs visualization](https://visualgo.net/en/graphds?slide=1)
+- [Tail call optimization](https://2ality.com/2015/06/tail-call-optimization.html)
