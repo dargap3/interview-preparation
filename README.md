@@ -348,6 +348,68 @@ Recursion is useful for things such as tree data structures and doing traversal.
 
 Recursion could be really space complexity expensive and we have to be careful whenever we use it.
 
+### 2. Sorting:
+
+#### 1. Bubble Sort:
+
+Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+
+- When to use: It's suitable for small datasets or when simplicity is more important than efficiency.
+- When not to use: It's inefficient for large datasets as its average and worst-case complexity are both O(n^2).
+
+#### 2. Selection Sort:
+
+Selection sort is an in-place comparison sorting algorithm that divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front of the list, and a sublist of the remaining unsorted items.
+
+- When to use: It’s useful when memory writes are significantly more expensive than reads, such as with EEPROM or flash memory.
+- When not to use: Generally not suitable for large datasets due to its O(n^2) complexity.
+
+#### 3. Insertion sort:
+
+Insertion sort works by building the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort.
+
+- When to use: Useful for small datasets or nearly sorted arrays.
+- When not to use: For larger or completely random datasets because of its O(n^2) complexity.
+
+#### 4. Merge sort:
+
+Merge sort is a divide-and-conquer algorithm that divides the unsorted list into n sublists, each containing one element, then repeatedly merges these sublists to produce new sorted sublists until there is only one sublist remaining.
+
+- When to use: Suitable for large datasets because it has a consistent O(n log n) runtime.
+- When not to use: It requires additional memory for the temporary arrays, so not great for memory-limited systems.
+
+#### 5. Quick sort:
+
+Quick sort is a highly efficient sorting algorithm and is based on partitioning of an array into smaller arrays. A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot, based on which the partition is made and another array holds values greater than the pivot value.
+
+- When to use: It is generally considered the fastest on average for large datasets.
+- When not to use: Worst-case performance is O(n^2), though this is rare. It also has a relatively deep recursion stack.
+
+#### 6. Heap sort:
+
+Heap sort involves building a Heap data structure from the elements of the array and then utilizing the properties of the heap to sort the array.
+
+- When to use: Good for real-time systems where time predictability is crucial due to its consistent O(n log n) performance.
+- When not to use: It can be slow in practice because of its overhead and memory usage.
+
+#### 7. Radix sort:
+
+Radix sort is a non-comparative sorting algorithm that sorts integers by processing individual digits. Numbers are processed from the least significant digit to the most significant digit.
+
+- When to use: Useful for fixed length integer sorting.
+- When not to use: Not suitable for sorting strings or floating-point numbers.
+
+#### 8. Counting sort:
+
+Counting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values, then doing some arithmetic to calculate the position of each object in the output sequence.
+
+- When to use: Efficient when the range of potential items in the input is known and not too large.
+- When not to use: It uses a lot of memory if the range of potential items is large.
+
+#### Which sort is best?
+
+The "best" sorting algorithm depends on the specific requirements of the task, including the size and type of data, and the performance characteristics required. Quick sort is generally a good default choice. For specific constraints or data types, other algorithms might be more appropriate.
+
 ## USEFUL RESOURCES
 
 - [replit](https://replit.com/) --> Your own automated app developer
@@ -375,3 +437,12 @@ Recursion could be really space complexity expensive and we have to be careful w
 - [Priority Queues](https://stackoverflow.com/questions/1699057/why-are-two-different-concepts-both-called-heap)
 - [Graphs visualization](https://visualgo.net/en/graphds?slide=1)
 - [Tail call optimization](https://2ality.com/2015/06/tail-call-optimization.html)
+- [Sorting algorithms](https://www.toptal.com/developers/sorting-algorithms)
+- [AlgoRythmics](https://www.youtube.com/user/AlgoRythmics/videos)
+- [Stability in sorting algorithms](https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important)
+- [Heap Sort](https://brilliant.org/wiki/heap-sort/)
+- [Quick vs Heap Sort](https://stackoverflow.com/questions/2467751/quicksort-vs-heapsort)
+- [Radix Sort](https://brilliant.org/wiki/radix-sort/)
+- [Radix Sort Animation](https://www.cs.usfca.edu/~galles/visualization/RadixSort.html)
+- [Counting Sort](https://brilliant.org/wiki/counting-sort/)
+- [Counting Sort Animation](https://www.cs.usfca.edu/~galles/visualization/CountingSort.html)
