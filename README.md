@@ -410,6 +410,46 @@ Counting sort is a sorting technique based on keys between a specific range. It 
 
 The "best" sorting algorithm depends on the specific requirements of the task, including the size and type of data, and the performance characteristics required. Quick sort is generally a good default choice. For specific constraints or data types, other algorithms might be more appropriate.
 
+### 3. Searching and traversal:
+
+#### - Linear Search:
+
+Linear search is a straightforward method of searching where the target value is checked sequentially from the start to the end of a list until it’s found or until all the elements have been checked.
+
+- **Time complexity:** O(n)
+- **When to use:** Useful when the list is unsorted, or when working with small to medium datasets where the simplicity of implementation is more valuable than efficiency.
+- **When not to use:** Inefficient for large datasets as it can be time-consuming due to its linear nature.
+
+#### - Binary Search:
+
+Binary search is a much faster search algorithm than linear search. It works on the principle of divide and conquer and can be applied only on a sorted list. It repeatedly divides the list into two halves until the target value is found or until the halves cannot be divided anymore.
+
+- **Time complexity:** O(log n)
+- **When to use:** Efficient for searching in large, sorted datasets.
+- **When not to use:** Not suitable for unsorted lists, and managing the sorting overhead can be undesirable if elements are frequently inserted or removed.
+
+#### - Depth First Search (DFS):
+
+Depth First Search is a graph traversal algorithm that starts at the root node and explores as far as possible along each branch before backtracking. It can be implemented using recursion or a stack.
+
+- **Time complexity:** O(n)
+- **When to use:** Useful when you need to explore all options and only the complete path matters since it can traverse through more graph in less time. Good for solving puzzles, finding connected components, or game simulations.
+- **When not to use:** Can get slow if the depth is very high or if the graph has cycles and precautions aren’t taken. It might also exhaust more memory due to recursion or stack.
+
+#### - Breadth First Search (BFS):
+
+Breadth First Search is another graph traversal algorithm that starts at the root node and explores all neighbor nodes at the present depth prior to moving on to nodes at the next depth level. It uses a queue.
+
+- **Time complexity:** O(n)
+- **When to use:** Excellent for finding the shortest path and closer nodes in terms of the number of edges. Useful in scenarios such as GPS and network routing for finding the nearest location.
+- **When not to use:** It uses additional memory, which can be a constraint for very large graphs or data sets.
+
+In using these algorithms, it's crucial to consider the nature of the data structure (like trees or graphs) and the specific requirements and constraints of the problem to select the most appropriate algorithm. Both DFS and BFS can be adapted with slight modifications to tackle various problems in complex graph-related challenges.
+
+#### - Exercise
+
+- [Validate a binary search tree](https://leetcode.com/problems/validate-binary-search-tree/description/)
+
 ## USEFUL RESOURCES
 
 - [replit](https://replit.com/) --> Your own automated app developer
@@ -446,3 +486,6 @@ The "best" sorting algorithm depends on the specific requirements of the task, i
 - [Radix Sort Animation](https://www.cs.usfca.edu/~galles/visualization/RadixSort.html)
 - [Counting Sort](https://brilliant.org/wiki/counting-sort/)
 - [Counting Sort Animation](https://www.cs.usfca.edu/~galles/visualization/CountingSort.html)
+- [DFS vs BFS](https://stackoverflow.com/questions/9844193/what-is-the-time-and-space-complexity-of-a-breadth-first-and-depth-first-tree-tr)
+- [DFS & BFS visualization](https://visualgo.net/en/dfsbfs?slide=1)
+- [Dijkstra + Bellman-Ford Algorithms](https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e)
